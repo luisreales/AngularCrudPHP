@@ -1,0 +1,30 @@
+<div class="col-md-6 user-container wrapper" style="align-items: center;">
+    <h2 style="margin: auto;text-align: center;" > Pacientes CRUD</h2>
+    <br>
+    <br>
+    <button class="btn btn-danger" style="width:100px"(click)="agregarPaciente()"> Agregar Paciente</button><br/>
+    <br>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="hidden"></th>
+        <th>Id</th>
+        <th>nombre</th>
+        <th>Telefono</th>
+        <th>EPS</th>        
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let paciente of pacientes">
+        <td></td>        
+        <td>{{paciente.id}}</td>
+        <td>{{paciente.nombre}}</td>
+        <td>{{paciente.telfono}}</td>
+        <td>{{paciente.EPS}}</td>
+        <td></td>
+        <td><button class="btn btn-success" (click)="eliminar(paciente)"> Delete</button>
+          <button class="btn btn-success" (click)="editar(paciente)" style="margin-left: 20px;"> Edit</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
