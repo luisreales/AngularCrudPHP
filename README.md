@@ -1,4 +1,4 @@
-# AngularEjemploClase - Developed by Teacher Luis Reales - CUC
+# AngularEjemploClase - Developed by Teacher Luis Reales - CUC (https://www.cuc.edu.co/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
 
