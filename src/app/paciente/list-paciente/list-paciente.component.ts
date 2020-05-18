@@ -29,8 +29,7 @@ export class ListPacienteComponent implements OnInit {
   eliminar(paciente:Pacientes):void {
    
     this._pacientesService.borrarPaciente(paciente.id)
-    .subscribe(data => {
-      debugger;
+    .subscribe(data => {      
       this.ngOnInit();
     });
 

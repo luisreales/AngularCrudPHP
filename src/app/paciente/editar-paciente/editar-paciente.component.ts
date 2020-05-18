@@ -36,15 +36,15 @@ export class EditarPacienteComponent implements OnInit {
   }
 
   cargarDetallePaciente(id:string){
-    debugger;
+    
     this.apiService.obtenerPacienteId(id)
     .subscribe( data => {
-      debugger;
+      
       this.editForm.setValue(data);
     });
   }
   onSubmit(){
-    debugger;
+    
     this.apiService.editarPaciente(this.editForm.value)   
     .subscribe(
       data => {

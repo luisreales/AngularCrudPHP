@@ -28,13 +28,11 @@ export class AgregarPacienteComponent implements OnInit {
   }
 
   onSubmit(){
-    debugger;
+    
     let form = this.addForm.value;
     console.log(form);
     this.apiService.crearPaciente(this.addForm.value)
     .subscribe( data => {
-
-      debugger;
       this.router.navigate(['paciente/listar']);
     });
   }
